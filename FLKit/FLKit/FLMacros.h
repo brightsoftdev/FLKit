@@ -87,7 +87,7 @@ CGContextRef context	= UIGraphicsGetCurrentContext();																		\
 CGContextDrawLinearGradient(context, gradient, left, right, 0); CGGradientRelease(gradient)
 
 #define LAYER_DROP_SHADOW(view, color, offset, opacity, radius) \
-view.layer.shadoFLolor = color.CGColor; \
+view.layer.shadowColor = color.CGColor; \
 view.layer.shadowOffset = offset;       \
 view.layer.shadowOpacity = opacity;     \
 view.layer.shadowRadius = radius

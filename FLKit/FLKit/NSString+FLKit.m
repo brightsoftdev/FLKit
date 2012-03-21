@@ -334,7 +334,7 @@
 - (NSMutableString *)prepend:(NSString *)string
 {
     [self insertString:string atIndex:0];
-    return self
+    return self;
 }
 
 - (NSMutableString *)insert:(NSString *)string atIndex:(NSUInteger)index

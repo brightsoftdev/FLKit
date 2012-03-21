@@ -48,9 +48,9 @@
 
 - (id)pop
 {
-    id = [self lastObject];
+    id object = [self lastObject];
     [self removeLastObject];
-    return id;
+    return object;
 }
 
 - (NSMutableArray *)unshift:(id)object

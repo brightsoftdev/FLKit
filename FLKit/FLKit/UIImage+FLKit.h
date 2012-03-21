@@ -17,10 +17,12 @@
 
 // Cropping
 - (UIImage *)fillImageWithColor:(UIColor *)color;
-- (UIImage *)cropImage:(UIImage *)img toInset:(CGFloat)inset;
-- (UIImage *)cropImage:(UIImage *)img toSize:(CGSize)size;
-- (UIImage *)cropImage:(UIImage *)img toSize:(CGSize)size atPoint:(CGPoint)point;
+- (UIImage *)cropImageToInset:(CGFloat)inset;
+- (UIImage *)cropImageToSizeFromCenter:(CGSize)size;
+- (UIImage *)cropImageToSize:(CGSize)size;
+- (UIImage *)cropImageToSize:(CGSize)size atPoint:(CGPoint)point;
 
 // Loading from URL
++ (UIImage *)imageFromURL:(id)url;
 + (UIImage *)imageFromURL:(id)url useCache:(BOOL)useCache;
 @end

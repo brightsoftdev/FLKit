@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9DEA8A1151A09BC0007295B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DEA8A0151A09BC0007295B /* UIKit.framework */; };
+		A9DEA8A3151A09BC0007295B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DEA8A2151A09BC0007295B /* Foundation.framework */; };
+		A9DEA8A5151A09BC0007295B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DEA8A4151A09BC0007295B /* CoreGraphics.framework */; };
+		A9DEA8AB151A09BC0007295B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9DEA8A9151A09BC0007295B /* InfoPlist.strings */; };
+		A9DEA8AD151A09BC0007295B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA8AC151A09BC0007295B /* main.m */; };
+		A9DEA8B1151A09BC0007295B /* FLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA8B0151A09BC0007295B /* FLAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A9DEA89C151A09BC0007295B /* FLKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DEA8A0151A09BC0007295B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A9DEA8A2151A09BC0007295B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A9DEA8A4151A09BC0007295B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A9DEA8A8151A09BC0007295B /* FLKit-Info.plist */ = {isa = PBXFileReference; path = "FLKit-Info.plist"; sourceTree = "<group>"; };
+		A9DEA8AA151A09BC0007295B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9DEA8AC151A09BC0007295B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9DEA8AE151A09BC0007295B /* FLKit-Prefix.pch */ = {isa = PBXFileReference; path = "FLKit-Prefix.pch"; sourceTree = "<group>"; };
+		A9DEA8AF151A09BC0007295B /* FLAppDelegate.h */ = {isa = PBXFileReference; path = FLAppDelegate.h; sourceTree = "<group>"; };
+		A9DEA8B0151A09BC0007295B /* FLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9DEA899151A09BC0007295B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DEA8A1151A09BC0007295B /* UIKit.framework in Frameworks */,
+				A9DEA8A3151A09BC0007295B /* Foundation.framework in Frameworks */,
+				A9DEA8A5151A09BC0007295B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9DEA891151A09BC0007295B = {
+			isa = PBXGroup;
+			children = (
+				A9DEA8A6151A09BC0007295B /* FLKit */,
+				A9DEA89F151A09BC0007295B /* Frameworks */,
+				A9DEA89D151A09BC0007295B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9DEA89D151A09BC0007295B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA89C151A09BC0007295B /* FLKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9DEA89F151A09BC0007295B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA8A0151A09BC0007295B /* UIKit.framework */,
+				A9DEA8A2151A09BC0007295B /* Foundation.framework */,
+				A9DEA8A4151A09BC0007295B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9DEA8A6151A09BC0007295B /* FLKit */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA8AF151A09BC0007295B /* FLAppDelegate.h */,
+				A9DEA8B0151A09BC0007295B /* FLAppDelegate.m */,
+				A9DEA8A7151A09BC0007295B /* Supporting Files */,
+			);
+			path = FLKit;
+			sourceTree = "<group>";
+		};
+		A9DEA8A7151A09BC0007295B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA8A8151A09BC0007295B /* FLKit-Info.plist */,
+				A9DEA8A9151A09BC0007295B /* InfoPlist.strings */,
+				A9DEA8AC151A09BC0007295B /* main.m */,
+				A9DEA8AE151A09BC0007295B /* FLKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9DEA89B151A09BC0007295B /* FLKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9DEA8B4151A09BC0007295B /* Build configuration list for PBXNativeTarget "FLKit" */;
+			buildPhases = (
+				A9DEA898151A09BC0007295B /* Sources */,
+				A9DEA899151A09BC0007295B /* Frameworks */,
+				A9DEA89A151A09BC0007295B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLKit;
+			productName = FLKit;
+			productReference = A9DEA89C151A09BC0007295B /* FLKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9DEA893151A09BC0007295B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FL;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = A9DEA896151A09BC0007295B /* Build configuration list for PBXProject "FLKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A9DEA891151A09BC0007295B;
+			productRefGroup = A9DEA89D151A09BC0007295B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9DEA89B151A09BC0007295B /* FLKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9DEA89A151A09BC0007295B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DEA8AB151A09BC0007295B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9DEA898151A09BC0007295B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DEA8AD151A09BC0007295B /* main.m in Sources */,
+				A9DEA8B1151A09BC0007295B /* FLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A9DEA8A9151A09BC0007295B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9DEA8AA151A09BC0007295B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9DEA8B2151A09BC0007295B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9DEA8B3151A09BC0007295B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9DEA8B5151A09BC0007295B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FLKit/FLKit-Prefix.pch";
+				INFOPLIST_FILE = "FLKit/FLKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A9DEA8B6151A09BC0007295B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FLKit/FLKit-Prefix.pch";
+				INFOPLIST_FILE = "FLKit/FLKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9DEA896151A09BC0007295B /* Build configuration list for PBXProject "FLKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DEA8B2151A09BC0007295B /* Debug */,
+				A9DEA8B3151A09BC0007295B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9DEA8B4151A09BC0007295B /* Build configuration list for PBXNativeTarget "FLKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DEA8B5151A09BC0007295B /* Debug */,
+				A9DEA8B6151A09BC0007295B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9DEA893151A09BC0007295B /* Project object */;
+}

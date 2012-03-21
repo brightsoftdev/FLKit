@@ -13,12 +13,22 @@
 		A9DEA8AB151A09BC0007295B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9DEA8A9151A09BC0007295B /* InfoPlist.strings */; };
 		A9DEA8AD151A09BC0007295B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA8AC151A09BC0007295B /* main.m */; };
 		A9DEA8B1151A09BC0007295B /* FLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA8B0151A09BC0007295B /* FLAppDelegate.m */; };
-		A9DEA8E1151A16DB0007295B /* UIAlertView+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA8E0151A16DB0007295B /* UIAlertView+FLKit.m */; };
-		A9DEA8E5151A17A40007295B /* UIButton+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA8E4151A17A40007295B /* UIButton+FLKit.m */; };
 		A9DEA8E7151A17DD0007295B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DEA8E6151A17DD0007295B /* QuartzCore.framework */; };
-		A9DEA8EB151A18280007295B /* UIColor+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA8EA151A18280007295B /* UIColor+FLKit.m */; };
-		A9DEA8EF151A189F0007295B /* UIControl+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA8EE151A189F0007295B /* UIControl+FLKit.m */; };
-		A9DEA8F3151A1B190007295B /* UIGestureRecognizer+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA8F2151A1B190007295B /* UIGestureRecognizer+FLKit.m */; };
+		A9DEA91C151A1EAE0007295B /* NSArray+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA8FF151A1EAE0007295B /* NSArray+FLKit.m */; };
+		A9DEA91D151A1EAE0007295B /* NSData+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA901151A1EAE0007295B /* NSData+FLKit.m */; };
+		A9DEA91E151A1EAE0007295B /* NSDate+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA903151A1EAE0007295B /* NSDate+FLKit.m */; };
+		A9DEA91F151A1EAE0007295B /* NSDictionary+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA905151A1EAE0007295B /* NSDictionary+FLKit.m */; };
+		A9DEA920151A1EAE0007295B /* NSObject+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA907151A1EAE0007295B /* NSObject+FLKit.m */; };
+		A9DEA921151A1EAE0007295B /* NSString+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA909151A1EAE0007295B /* NSString+FLKit.m */; };
+		A9DEA922151A1EAE0007295B /* TimeFormatters.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA90B151A1EAE0007295B /* TimeFormatters.m */; };
+		A9DEA923151A1EAE0007295B /* UIAlertView+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA90D151A1EAE0007295B /* UIAlertView+FLKit.m */; };
+		A9DEA924151A1EAE0007295B /* UIButton+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA90F151A1EAE0007295B /* UIButton+FLKit.m */; };
+		A9DEA925151A1EAE0007295B /* UIColor+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA911151A1EAE0007295B /* UIColor+FLKit.m */; };
+		A9DEA926151A1EAE0007295B /* UIControl+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA913151A1EAE0007295B /* UIControl+FLKit.m */; };
+		A9DEA927151A1EAE0007295B /* UIGestureRecognizer+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA915151A1EAE0007295B /* UIGestureRecognizer+FLKit.m */; };
+		A9DEA928151A1EAE0007295B /* UIImage+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA917151A1EAE0007295B /* UIImage+FLKit.m */; };
+		A9DEA929151A1EAE0007295B /* UILabel+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA919151A1EAE0007295B /* UILabel+FLKit.m */; };
+		A9DEA92A151A1EAE0007295B /* UIView+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA91B151A1EAE0007295B /* UIView+FLKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,39 +42,39 @@
 		A9DEA8AE151A09BC0007295B /* FLKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FLKit-Prefix.pch"; sourceTree = "<group>"; };
 		A9DEA8AF151A09BC0007295B /* FLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAppDelegate.h; sourceTree = "<group>"; };
 		A9DEA8B0151A09BC0007295B /* FLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAppDelegate.m; sourceTree = "<group>"; };
-		A9DEA8B9151A09FE0007295B /* NSArray+FLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+FLKit.h"; sourceTree = "<group>"; };
-		A9DEA8BA151A09FE0007295B /* NSArray+FLKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FLKit.m"; sourceTree = "<group>"; };
-		A9DEA8BB151A09FE0007295B /* NSData+FLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+FLKit.h"; sourceTree = "<group>"; };
-		A9DEA8BC151A09FE0007295B /* NSData+FLKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+FLKit.m"; sourceTree = "<group>"; };
-		A9DEA8BD151A09FE0007295B /* NSDate+FLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+FLKit.h"; sourceTree = "<group>"; };
-		A9DEA8BE151A09FE0007295B /* NSDate+FLKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FLKit.m"; sourceTree = "<group>"; };
-		A9DEA8BF151A09FE0007295B /* NSDictionary+FLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FLKit.h"; sourceTree = "<group>"; };
-		A9DEA8C0151A09FE0007295B /* NSDictionary+FLKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FLKit.m"; sourceTree = "<group>"; };
-		A9DEA8C1151A09FE0007295B /* NSObject+FLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+FLKit.h"; sourceTree = "<group>"; };
-		A9DEA8C2151A09FE0007295B /* NSObject+FLKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FLKit.m"; sourceTree = "<group>"; };
-		A9DEA8C3151A09FE0007295B /* NSString+FLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FLKit.h"; sourceTree = "<group>"; };
-		A9DEA8C4151A09FE0007295B /* NSString+FLKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FLKit.m"; sourceTree = "<group>"; };
-		A9DEA8C5151A09FE0007295B /* TimeFormatters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeFormatters.h; sourceTree = "<group>"; };
-		A9DEA8C6151A09FE0007295B /* TimeFormatters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeFormatters.m; sourceTree = "<group>"; };
-		A9DEA8C7151A09FE0007295B /* UIImage+FLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FLKit.h"; sourceTree = "<group>"; };
-		A9DEA8C8151A09FE0007295B /* UIImage+FLKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FLKit.m"; sourceTree = "<group>"; };
-		A9DEA8C9151A09FE0007295B /* UILabel+FLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+FLKit.h"; sourceTree = "<group>"; };
-		A9DEA8CA151A09FE0007295B /* UILabel+FLKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FLKit.m"; sourceTree = "<group>"; };
-		A9DEA8CB151A09FE0007295B /* UIView+FLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FLKit.h"; sourceTree = "<group>"; };
-		A9DEA8CC151A09FE0007295B /* UIView+FLKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FLKit.m"; sourceTree = "<group>"; };
-		A9DEA8CD151A09FE0007295B /* FLMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLMacros.h; sourceTree = "<group>"; };
-		A9DEA8D9151A15D10007295B /* FLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLKit.h; sourceTree = "<group>"; };
-		A9DEA8DF151A16DB0007295B /* UIAlertView+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+FLKit.h"; sourceTree = "<group>"; };
-		A9DEA8E0151A16DB0007295B /* UIAlertView+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+FLKit.m"; sourceTree = "<group>"; };
-		A9DEA8E3151A17A40007295B /* UIButton+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+FLKit.h"; sourceTree = "<group>"; };
-		A9DEA8E4151A17A40007295B /* UIButton+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FLKit.m"; sourceTree = "<group>"; };
 		A9DEA8E6151A17DD0007295B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		A9DEA8E9151A18280007295B /* UIColor+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FLKit.h"; sourceTree = "<group>"; };
-		A9DEA8EA151A18280007295B /* UIColor+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FLKit.m"; sourceTree = "<group>"; };
-		A9DEA8ED151A189F0007295B /* UIControl+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+FLKit.h"; sourceTree = "<group>"; };
-		A9DEA8EE151A189F0007295B /* UIControl+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+FLKit.m"; sourceTree = "<group>"; };
-		A9DEA8F1151A1B190007295B /* UIGestureRecognizer+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+FLKit.h"; sourceTree = "<group>"; };
-		A9DEA8F2151A1B190007295B /* UIGestureRecognizer+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+FLKit.m"; sourceTree = "<group>"; };
+		A9DEA8FC151A1EAE0007295B /* FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLKit.h; sourceTree = "<group>"; };
+		A9DEA8FD151A1EAE0007295B /* FLMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLMacros.h; sourceTree = "<group>"; };
+		A9DEA8FE151A1EAE0007295B /* NSArray+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FLKit.h"; sourceTree = "<group>"; };
+		A9DEA8FF151A1EAE0007295B /* NSArray+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FLKit.m"; sourceTree = "<group>"; };
+		A9DEA900151A1EAE0007295B /* NSData+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+FLKit.h"; sourceTree = "<group>"; };
+		A9DEA901151A1EAE0007295B /* NSData+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+FLKit.m"; sourceTree = "<group>"; };
+		A9DEA902151A1EAE0007295B /* NSDate+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+FLKit.h"; sourceTree = "<group>"; };
+		A9DEA903151A1EAE0007295B /* NSDate+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FLKit.m"; sourceTree = "<group>"; };
+		A9DEA904151A1EAE0007295B /* NSDictionary+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FLKit.h"; sourceTree = "<group>"; };
+		A9DEA905151A1EAE0007295B /* NSDictionary+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FLKit.m"; sourceTree = "<group>"; };
+		A9DEA906151A1EAE0007295B /* NSObject+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FLKit.h"; sourceTree = "<group>"; };
+		A9DEA907151A1EAE0007295B /* NSObject+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FLKit.m"; sourceTree = "<group>"; };
+		A9DEA908151A1EAE0007295B /* NSString+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FLKit.h"; sourceTree = "<group>"; };
+		A9DEA909151A1EAE0007295B /* NSString+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FLKit.m"; sourceTree = "<group>"; };
+		A9DEA90A151A1EAE0007295B /* TimeFormatters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeFormatters.h; sourceTree = "<group>"; };
+		A9DEA90B151A1EAE0007295B /* TimeFormatters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeFormatters.m; sourceTree = "<group>"; };
+		A9DEA90C151A1EAE0007295B /* UIAlertView+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+FLKit.h"; sourceTree = "<group>"; };
+		A9DEA90D151A1EAE0007295B /* UIAlertView+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+FLKit.m"; sourceTree = "<group>"; };
+		A9DEA90E151A1EAE0007295B /* UIButton+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+FLKit.h"; sourceTree = "<group>"; };
+		A9DEA90F151A1EAE0007295B /* UIButton+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FLKit.m"; sourceTree = "<group>"; };
+		A9DEA910151A1EAE0007295B /* UIColor+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FLKit.h"; sourceTree = "<group>"; };
+		A9DEA911151A1EAE0007295B /* UIColor+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FLKit.m"; sourceTree = "<group>"; };
+		A9DEA912151A1EAE0007295B /* UIControl+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+FLKit.h"; sourceTree = "<group>"; };
+		A9DEA913151A1EAE0007295B /* UIControl+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+FLKit.m"; sourceTree = "<group>"; };
+		A9DEA914151A1EAE0007295B /* UIGestureRecognizer+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+FLKit.h"; sourceTree = "<group>"; };
+		A9DEA915151A1EAE0007295B /* UIGestureRecognizer+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+FLKit.m"; sourceTree = "<group>"; };
+		A9DEA916151A1EAE0007295B /* UIImage+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FLKit.h"; sourceTree = "<group>"; };
+		A9DEA917151A1EAE0007295B /* UIImage+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FLKit.m"; sourceTree = "<group>"; };
+		A9DEA918151A1EAE0007295B /* UILabel+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FLKit.h"; sourceTree = "<group>"; };
+		A9DEA919151A1EAE0007295B /* UILabel+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FLKit.m"; sourceTree = "<group>"; };
+		A9DEA91A151A1EAE0007295B /* UIView+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FLKit.h"; sourceTree = "<group>"; };
+		A9DEA91B151A1EAE0007295B /* UIView+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FLKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +123,8 @@
 		A9DEA8A6151A09BC0007295B /* FLKit */ = {
 			isa = PBXGroup;
 			children = (
+				A9DEA8FB151A1EAE0007295B /* FLKit */,
 				A9DEA8F5151A1C230007295B /* App */,
-				A9DEA8B7151A09CA0007295B /* FLKit */,
 			);
 			path = FLKit;
 			sourceTree = "<group>";
@@ -130,181 +140,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A9DEA8B7151A09CA0007295B /* FLKit */ = {
-			isa = PBXGroup;
-			children = (
-				A9DEA8CD151A09FE0007295B /* FLMacros.h */,
-				A9DEA8B8151A09D20007295B /* Categories */,
-				A9DEA8D9151A15D10007295B /* FLKit.h */,
-			);
-			name = FLKit;
-			sourceTree = "<group>";
-		};
-		A9DEA8B8151A09D20007295B /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				A9DEA8CF151A15510007295B /* UIKit */,
-				A9DEA8CE151A15490007295B /* Foundation */,
-			);
-			name = Categories;
-			sourceTree = "<group>";
-		};
-		A9DEA8CE151A15490007295B /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				A9DEA8D3151A15860007295B /* NSArray */,
-				A9DEA8D4151A15890007295B /* NSData */,
-				A9DEA8D5151A158F0007295B /* NSDate */,
-				A9DEA8D6151A15940007295B /* NSDictionary */,
-				A9DEA8D7151A15990007295B /* NSObject */,
-				A9DEA8D8151A159D0007295B /* NSString */,
-			);
-			name = Foundation;
-			sourceTree = "<group>";
-		};
-		A9DEA8CF151A15510007295B /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				A9DEA8F0151A1B070007295B /* UIGestureRecognizer */,
-				A9DEA8EC151A188E0007295B /* UIControl */,
-				A9DEA8E8151A181C0007295B /* UIColor */,
-				A9DEA8E2151A17880007295B /* UIButton */,
-				A9DEA8DE151A16C20007295B /* UIAlertView */,
-				A9DEA8D0151A15680007295B /* UIImage */,
-				A9DEA8D1151A156F0007295B /* UILabel */,
-				A9DEA8D2151A15790007295B /* UIView */,
-			);
-			name = UIKit;
-			sourceTree = "<group>";
-		};
-		A9DEA8D0151A15680007295B /* UIImage */ = {
-			isa = PBXGroup;
-			children = (
-				A9DEA8C7151A09FE0007295B /* UIImage+FLKit.h */,
-				A9DEA8C8151A09FE0007295B /* UIImage+FLKit.m */,
-			);
-			name = UIImage;
-			sourceTree = "<group>";
-		};
-		A9DEA8D1151A156F0007295B /* UILabel */ = {
-			isa = PBXGroup;
-			children = (
-				A9DEA8C9151A09FE0007295B /* UILabel+FLKit.h */,
-				A9DEA8CA151A09FE0007295B /* UILabel+FLKit.m */,
-			);
-			name = UILabel;
-			sourceTree = "<group>";
-		};
-		A9DEA8D2151A15790007295B /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				A9DEA8CB151A09FE0007295B /* UIView+FLKit.h */,
-				A9DEA8CC151A09FE0007295B /* UIView+FLKit.m */,
-			);
-			name = UIView;
-			sourceTree = "<group>";
-		};
-		A9DEA8D3151A15860007295B /* NSArray */ = {
-			isa = PBXGroup;
-			children = (
-				A9DEA8B9151A09FE0007295B /* NSArray+FLKit.h */,
-				A9DEA8BA151A09FE0007295B /* NSArray+FLKit.m */,
-			);
-			name = NSArray;
-			sourceTree = "<group>";
-		};
-		A9DEA8D4151A15890007295B /* NSData */ = {
-			isa = PBXGroup;
-			children = (
-				A9DEA8BB151A09FE0007295B /* NSData+FLKit.h */,
-				A9DEA8BC151A09FE0007295B /* NSData+FLKit.m */,
-			);
-			name = NSData;
-			sourceTree = "<group>";
-		};
-		A9DEA8D5151A158F0007295B /* NSDate */ = {
-			isa = PBXGroup;
-			children = (
-				A9DEA8C5151A09FE0007295B /* TimeFormatters.h */,
-				A9DEA8C6151A09FE0007295B /* TimeFormatters.m */,
-				A9DEA8BD151A09FE0007295B /* NSDate+FLKit.h */,
-				A9DEA8BE151A09FE0007295B /* NSDate+FLKit.m */,
-			);
-			name = NSDate;
-			sourceTree = "<group>";
-		};
-		A9DEA8D6151A15940007295B /* NSDictionary */ = {
-			isa = PBXGroup;
-			children = (
-				A9DEA8BF151A09FE0007295B /* NSDictionary+FLKit.h */,
-				A9DEA8C0151A09FE0007295B /* NSDictionary+FLKit.m */,
-			);
-			name = NSDictionary;
-			sourceTree = "<group>";
-		};
-		A9DEA8D7151A15990007295B /* NSObject */ = {
-			isa = PBXGroup;
-			children = (
-				A9DEA8C1151A09FE0007295B /* NSObject+FLKit.h */,
-				A9DEA8C2151A09FE0007295B /* NSObject+FLKit.m */,
-			);
-			name = NSObject;
-			sourceTree = "<group>";
-		};
-		A9DEA8D8151A159D0007295B /* NSString */ = {
-			isa = PBXGroup;
-			children = (
-				A9DEA8C3151A09FE0007295B /* NSString+FLKit.h */,
-				A9DEA8C4151A09FE0007295B /* NSString+FLKit.m */,
-			);
-			name = NSString;
-			sourceTree = "<group>";
-		};
-		A9DEA8DE151A16C20007295B /* UIAlertView */ = {
-			isa = PBXGroup;
-			children = (
-				A9DEA8DF151A16DB0007295B /* UIAlertView+FLKit.h */,
-				A9DEA8E0151A16DB0007295B /* UIAlertView+FLKit.m */,
-			);
-			name = UIAlertView;
-			sourceTree = "<group>";
-		};
-		A9DEA8E2151A17880007295B /* UIButton */ = {
-			isa = PBXGroup;
-			children = (
-				A9DEA8E3151A17A40007295B /* UIButton+FLKit.h */,
-				A9DEA8E4151A17A40007295B /* UIButton+FLKit.m */,
-			);
-			name = UIButton;
-			sourceTree = "<group>";
-		};
-		A9DEA8E8151A181C0007295B /* UIColor */ = {
-			isa = PBXGroup;
-			children = (
-				A9DEA8E9151A18280007295B /* UIColor+FLKit.h */,
-				A9DEA8EA151A18280007295B /* UIColor+FLKit.m */,
-			);
-			name = UIColor;
-			sourceTree = "<group>";
-		};
-		A9DEA8EC151A188E0007295B /* UIControl */ = {
-			isa = PBXGroup;
-			children = (
-				A9DEA8ED151A189F0007295B /* UIControl+FLKit.h */,
-				A9DEA8EE151A189F0007295B /* UIControl+FLKit.m */,
-			);
-			name = UIControl;
-			sourceTree = "<group>";
-		};
-		A9DEA8F0151A1B070007295B /* UIGestureRecognizer */ = {
-			isa = PBXGroup;
-			children = (
-				A9DEA8F1151A1B190007295B /* UIGestureRecognizer+FLKit.h */,
-				A9DEA8F2151A1B190007295B /* UIGestureRecognizer+FLKit.m */,
-			);
-			name = UIGestureRecognizer;
-			sourceTree = "<group>";
-		};
 		A9DEA8F5151A1C230007295B /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +148,173 @@
 				A9DEA8A7151A09BC0007295B /* Supporting Files */,
 			);
 			name = App;
+			sourceTree = "<group>";
+		};
+		A9DEA8FB151A1EAE0007295B /* FLKit */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA8FC151A1EAE0007295B /* FLKit.h */,
+				A9DEA8FD151A1EAE0007295B /* FLMacros.h */,
+				A9DEA92B151A1EBC0007295B /* Foundation */,
+				A9DEA932151A1F950007295B /* UIKit */,
+			);
+			path = FLKit;
+			sourceTree = "<group>";
+		};
+		A9DEA92B151A1EBC0007295B /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA92C151A1EC30007295B /* NSArray */,
+				A9DEA92D151A1EC90007295B /* NSData */,
+				A9DEA92E151A1ECF0007295B /* NSDate */,
+				A9DEA92F151A1ED40007295B /* NSDictionary */,
+				A9DEA930151A1F640007295B /* NSObject */,
+				A9DEA931151A1F680007295B /* NSString */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		A9DEA92C151A1EC30007295B /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA8FE151A1EAE0007295B /* NSArray+FLKit.h */,
+				A9DEA8FF151A1EAE0007295B /* NSArray+FLKit.m */,
+			);
+			name = NSArray;
+			sourceTree = "<group>";
+		};
+		A9DEA92D151A1EC90007295B /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA900151A1EAE0007295B /* NSData+FLKit.h */,
+				A9DEA901151A1EAE0007295B /* NSData+FLKit.m */,
+			);
+			name = NSData;
+			sourceTree = "<group>";
+		};
+		A9DEA92E151A1ECF0007295B /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA902151A1EAE0007295B /* NSDate+FLKit.h */,
+				A9DEA903151A1EAE0007295B /* NSDate+FLKit.m */,
+				A9DEA90A151A1EAE0007295B /* TimeFormatters.h */,
+				A9DEA90B151A1EAE0007295B /* TimeFormatters.m */,
+			);
+			name = NSDate;
+			sourceTree = "<group>";
+		};
+		A9DEA92F151A1ED40007295B /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA904151A1EAE0007295B /* NSDictionary+FLKit.h */,
+				A9DEA905151A1EAE0007295B /* NSDictionary+FLKit.m */,
+			);
+			name = NSDictionary;
+			sourceTree = "<group>";
+		};
+		A9DEA930151A1F640007295B /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA906151A1EAE0007295B /* NSObject+FLKit.h */,
+				A9DEA907151A1EAE0007295B /* NSObject+FLKit.m */,
+			);
+			name = NSObject;
+			sourceTree = "<group>";
+		};
+		A9DEA931151A1F680007295B /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA908151A1EAE0007295B /* NSString+FLKit.h */,
+				A9DEA909151A1EAE0007295B /* NSString+FLKit.m */,
+			);
+			name = NSString;
+			sourceTree = "<group>";
+		};
+		A9DEA932151A1F950007295B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA933151A1FA50007295B /* UIAlertView */,
+				A9DEA934151A1FA90007295B /* UIButton */,
+				A9DEA935151A1FAD0007295B /* UIColor */,
+				A9DEA936151A1FBB0007295B /* UIControl */,
+				A9DEA937151A1FC00007295B /* UIGestureRecognizer */,
+				A9DEA938151A1FC30007295B /* UIImage */,
+				A9DEA939151A1FC70007295B /* UILabel */,
+				A9DEA93A151A1FCA0007295B /* UIView */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		A9DEA933151A1FA50007295B /* UIAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA90C151A1EAE0007295B /* UIAlertView+FLKit.h */,
+				A9DEA90D151A1EAE0007295B /* UIAlertView+FLKit.m */,
+			);
+			name = UIAlertView;
+			sourceTree = "<group>";
+		};
+		A9DEA934151A1FA90007295B /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA90E151A1EAE0007295B /* UIButton+FLKit.h */,
+				A9DEA90F151A1EAE0007295B /* UIButton+FLKit.m */,
+			);
+			name = UIButton;
+			sourceTree = "<group>";
+		};
+		A9DEA935151A1FAD0007295B /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA910151A1EAE0007295B /* UIColor+FLKit.h */,
+				A9DEA911151A1EAE0007295B /* UIColor+FLKit.m */,
+			);
+			name = UIColor;
+			sourceTree = "<group>";
+		};
+		A9DEA936151A1FBB0007295B /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA912151A1EAE0007295B /* UIControl+FLKit.h */,
+				A9DEA913151A1EAE0007295B /* UIControl+FLKit.m */,
+			);
+			name = UIControl;
+			sourceTree = "<group>";
+		};
+		A9DEA937151A1FC00007295B /* UIGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA914151A1EAE0007295B /* UIGestureRecognizer+FLKit.h */,
+				A9DEA915151A1EAE0007295B /* UIGestureRecognizer+FLKit.m */,
+			);
+			name = UIGestureRecognizer;
+			sourceTree = "<group>";
+		};
+		A9DEA938151A1FC30007295B /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA916151A1EAE0007295B /* UIImage+FLKit.h */,
+				A9DEA917151A1EAE0007295B /* UIImage+FLKit.m */,
+			);
+			name = UIImage;
+			sourceTree = "<group>";
+		};
+		A9DEA939151A1FC70007295B /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA918151A1EAE0007295B /* UILabel+FLKit.h */,
+				A9DEA919151A1EAE0007295B /* UILabel+FLKit.m */,
+			);
+			name = UILabel;
+			sourceTree = "<group>";
+		};
+		A9DEA93A151A1FCA0007295B /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA91A151A1EAE0007295B /* UIView+FLKit.h */,
+				A9DEA91B151A1EAE0007295B /* UIView+FLKit.m */,
+			);
+			name = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,11 +382,21 @@
 			files = (
 				A9DEA8AD151A09BC0007295B /* main.m in Sources */,
 				A9DEA8B1151A09BC0007295B /* FLAppDelegate.m in Sources */,
-				A9DEA8E1151A16DB0007295B /* UIAlertView+FLKit.m in Sources */,
-				A9DEA8E5151A17A40007295B /* UIButton+FLKit.m in Sources */,
-				A9DEA8EB151A18280007295B /* UIColor+FLKit.m in Sources */,
-				A9DEA8EF151A189F0007295B /* UIControl+FLKit.m in Sources */,
-				A9DEA8F3151A1B190007295B /* UIGestureRecognizer+FLKit.m in Sources */,
+				A9DEA91C151A1EAE0007295B /* NSArray+FLKit.m in Sources */,
+				A9DEA91D151A1EAE0007295B /* NSData+FLKit.m in Sources */,
+				A9DEA91E151A1EAE0007295B /* NSDate+FLKit.m in Sources */,
+				A9DEA91F151A1EAE0007295B /* NSDictionary+FLKit.m in Sources */,
+				A9DEA920151A1EAE0007295B /* NSObject+FLKit.m in Sources */,
+				A9DEA921151A1EAE0007295B /* NSString+FLKit.m in Sources */,
+				A9DEA922151A1EAE0007295B /* TimeFormatters.m in Sources */,
+				A9DEA923151A1EAE0007295B /* UIAlertView+FLKit.m in Sources */,
+				A9DEA924151A1EAE0007295B /* UIButton+FLKit.m in Sources */,
+				A9DEA925151A1EAE0007295B /* UIColor+FLKit.m in Sources */,
+				A9DEA926151A1EAE0007295B /* UIControl+FLKit.m in Sources */,
+				A9DEA927151A1EAE0007295B /* UIGestureRecognizer+FLKit.m in Sources */,
+				A9DEA928151A1EAE0007295B /* UIImage+FLKit.m in Sources */,
+				A9DEA929151A1EAE0007295B /* UILabel+FLKit.m in Sources */,
+				A9DEA92A151A1EAE0007295B /* UIView+FLKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +502,7 @@
 				A9DEA8B6151A09BC0007295B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

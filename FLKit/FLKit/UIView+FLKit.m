@@ -53,9 +53,26 @@
     return CGRectGetMinY(self.frame);
 }
 
+- (CGFloat)top {
+    return self.y;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGFloat)left {
+    return self.x;
+}
+
 - (CGFloat)x
 {
     return CGRectGetMinX(self.frame);
+}
+
+- (CGFloat)right {
+    return self.frame.origin.x + self.frame.size.width;
+}
+
+- (CGFloat)bottom {
+    return self.frame.origin.y + self.frame.size.height;
 }
 
 - (CGFloat)width
@@ -68,6 +85,13 @@
     return CGRectGetHeight(self.frame);
 }
 
+- (CGFloat)centerX {
+    return self.center.x;
+}
+
+- (CGFloat)centerY {
+    return self.center.y;
+}
 
 #pragma mark - Setters
 
@@ -93,6 +117,27 @@
     self.frame      = frame;
 }
 
+- (void)setTop:(CGFloat)y {
+    [self setY:y];
+}
+
+- (void)setBottom:(CGFloat)bottom {
+    CGRect frame = self.frame;
+    frame.origin.y = bottom - frame.size.height;
+    self.frame = frame;
+}
+
+- (void)setLeft:(CGFloat)x {
+    [self setX:x];
+}
+
+- (void)setRight:(CGFloat)right {
+    CGRect frame = self.frame;
+    frame.origin.x = right - frame.size.width;
+    self.frame = frame;
+}
+
+
 - (void)setX:(CGFloat)_x
 {
     CGRect frame    = self.frame;
@@ -112,6 +157,14 @@
     CGRect frame        = self.frame;
     frame.size.height   = _height;
     self.frame          = frame;
+}
+
+- (void)setCenterX:(CGFloat)centerX {
+    self.center = CGPointMake(centerX, self.center.y);
+}
+
+- (void)setCenterY:(CGFloat)centerY {
+    self.center = CGPointMake(self.center.x, centerY);
 }
 
 #pragma mark - RoundCorners

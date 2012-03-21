@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FLKit.h"
 
 @interface FLAppDelegate : UIResponder <UIApplicationDelegate>
 

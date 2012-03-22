@@ -85,13 +85,26 @@
     return CGRectGetHeight(self.frame);
 }
 
-- (CGFloat)centerX {
+- (CGFloat)centerX 
+{
     return self.center.x;
 }
 
-- (CGFloat)centerY {
+- (CGFloat)centerY 
+{
     return self.center.y;
 }
+
+- (CGFloat)borderWidth
+{
+    return self.layer.borderWidth;
+}
+
+- (UIColor *)borderColor
+{
+    return [UIColor colorWithCGColor:self.layer.borderColor];
+}
+
 
 #pragma mark - Setters
 
@@ -159,12 +172,24 @@
     self.frame          = frame;
 }
 
-- (void)setCenterX:(CGFloat)centerX {
+- (void)setCenterX:(CGFloat)centerX 
+{
     self.center = CGPointMake(centerX, self.center.y);
 }
 
-- (void)setCenterY:(CGFloat)centerY {
+- (void)setCenterY:(CGFloat)centerY 
+{
     self.center = CGPointMake(self.center.x, centerY);
+}
+
+- (void)setBorderWidth:(CGFloat)borderWidth
+{
+    self.layer.borderWidth = borderWidth;
+}
+
+- (void)setBorderColor:(UIColor *)borderColor
+{
+    self.layer.borderColor = borderColor.CGColor;
 }
 
 #pragma mark - RoundCorners

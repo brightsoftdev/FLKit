@@ -31,6 +31,7 @@
 - (NSString *)strip:(NSString *)phoneNumber;
 - (NSString *)formattedPhoneNumber;
 - (NSString *)substringAfterRange:(NSRange)range;
+- (NSString *)summarizeString:(NSInteger)length;
 
 @end
 

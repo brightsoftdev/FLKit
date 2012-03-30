@@ -33,6 +33,7 @@ typedef NSInteger UIViewRoundedCornerMask;
 @property (nonatomic)           CGFloat   height;
 @property (nonatomic)           CGFloat   centerX;
 @property (nonatomic)           CGFloat   centerY;
+@property (nonatomic)           CGFloat   cornerRadius;
 @property (nonatomic)           CGFloat   borderWidth;
 @property (nonatomic, retain)   UIColor   *borderColor;
 

@@ -19,10 +19,14 @@
 #define BLUE            [UIColor blueColor]
 #define GREEN           [UIColor greenColor]
 #define YELLOW          [UIColor yellowColor]
+#define MAGENTA         [UIColor magentaColor]
 #define GRAY            [UIColor grayColor]
 #define LIGHTGRAY       [UIColor lightGrayColor]
 #define CLEAR           [UIColor clearColor]
 #define HEX_COLOR(hex)  [UIColor fromHexString:hex]
+
+#define PATH_FOR_RESOURCE(filename, type)   [[NSBundle mainBundle] pathForResource:filename ofType:type]
+#define READ_FILE(filename, type)           [[NSString alloc] initWithContentsOfFile:PATH_FOR_RESOURCE(filename, type) encoding:NSUTF8StringEncoding error:nil]
 
 /* System Shorthand */
 
@@ -36,6 +40,10 @@
 #define DEVICE_ORIENTATION          [[UIDevice currentDevice] orientation]
 #define IS_LANDSCAPE                UIDeviceOrientationIsLandscape(DEVICE_ORIENTATION)
 #define IS_PORTRAIT                 UIDeviceOrientationIsPortrait(DEVICE_ORIENTATION)
+
+#define STATUS_BAR_ORIENTATION      [[UIApplication sharedApplication] statusBarOrientation]
+#define STATUS_BAR_IS_LANDSCAPE     UIDeviceOrientationIsLandscape(STATUS_BAR_ORIENTATION)
+#define STATUS_BAR_IS_PORTRAIT      UIDeviceOrientationIsPortrait(STATUS_BAR_ORIENTATION)
 
 #define ORIENTATION_BOUNDS  \
 CGRectMake((IS_LANDSCAPE)? SCREEN_BOUNDS.origin.y : SCREEN_BOUNDS.origin.x, \

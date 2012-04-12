@@ -13,4 +13,5 @@
 - (UIColor *)colorByChangingAlphaTo:(CGFloat)newAlpha;
 - (UIColor *)invertColor;
 - (BOOL)isDark;
++ (UIColor *)randomColor;
 @end

@@ -202,8 +202,19 @@
     self.layer.borderColor = borderColor.CGColor;
 }
 
+
+- (UIImage *)rasterizedToImage
+{
+    UIGraphicsBeginImageContext(self.size);
+    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *rasterizedView = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return rasterizedView;
+}
+
 #pragma mark - RoundCorners
--(void)setRoundedCorners:(UIViewRoundedCornerMask)corners radius:(CGFloat)radius 
+- (void)setRoundedCorners:(UIViewRoundedCornerMask)corners radius:(CGFloat)radius 
 {
     CGRect rect = self.bounds;
 	
@@ -228,6 +239,21 @@
 	[[self layer] setMask:maskLayer];
 	CFRelease(path);
 }
+
+#pragma mark - Shadows a Drawing
+- (void)addShadowWithColor:(UIColor *)color offset:(CGSize)offset opacity:(CGFloat)opacity andRadius:(CGFloat)radius
+{
+    CGPathRef path = CGPathCreateWithRect(self.bounds, NULL);
+    
+    self.layer.shadowPath       = path;
+    self.layer.shadowColor      = color.CGColor;
+    self.layer.shadowOffset     = offset;
+    self.layer.shadowOpacity    = opacity;
+    self.layer.shadowRadius     = radius;
+    
+    CGPathRelease(path);
+}
+
 
 #pragma mark - Short cut methods
 

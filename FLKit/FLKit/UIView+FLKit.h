@@ -37,8 +37,10 @@ typedef NSInteger UIViewRoundedCornerMask;
 @property (nonatomic)           CGFloat   borderWidth;
 @property (nonatomic, retain)   UIColor   *borderColor;
 
+- (UIImage *)rasterizedToImage;
+- (void)setRoundedCorners:(UIViewRoundedCornerMask)corners radius:(CGFloat)radius;
+- (void)addShadowWithColor:(UIColor *)color offset:(CGSize)offset opacity:(CGFloat)opacity andRadius:(CGFloat)radius;
 
--(void)setRoundedCorners:(UIViewRoundedCornerMask)corners radius:(CGFloat)radius;
 + (UIView *)topView;
 + (UIView *)viewWithFrame:(CGRect)frame drawRect:(FLDrawRect)block;
 @end

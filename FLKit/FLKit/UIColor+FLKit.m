@@ -13,8 +13,12 @@
 {
     inColorString = [inColorString stringByReplacingOccurrencesOfString:@"#" withString:@""];
     
-    if([inColorString length] == 3)
-        inColorString = [inColorString stringByAppendingString:inColorString];
+    if(inColorString.length == 3)
+    {
+        const char *temp = [inColorString cStringUsingEncoding:NSASCIIStringEncoding];
+        const unsigned short t[] = {temp[0], temp[0], temp[1], temp[1], temp[2], temp[2]};
+        inColorString = [NSString stringWithCharacters:t length:6];
+    }
     
 	UIColor *result = nil;
 	unsigned int colorCode = 0;

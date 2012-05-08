@@ -320,6 +320,19 @@
     return [self substringFromIndex:NSMaxRange (range)];
 }
 
+- (NSString *)summarizeString:(NSInteger)length
+{
+    NSMutableArray *result = NEW_MUTABLE_ARRAY;
+    NSArray *words = [self componentsSeparatedByString:@" "];
+    
+    for(int i = 0; i < (length - 1); i++)
+        [result addObject:[words objectAtIndex:i]];
+    
+    [result addObject:@"..."];
+    
+    return [words componentsJoinedByString:@" "];
+}
+
 @end
 
 

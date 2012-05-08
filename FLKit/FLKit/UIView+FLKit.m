@@ -85,13 +85,31 @@
     return CGRectGetHeight(self.frame);
 }
 
-- (CGFloat)centerX {
+- (CGFloat)centerX 
+{
     return self.center.x;
 }
 
-- (CGFloat)centerY {
+- (CGFloat)centerY 
+{
     return self.center.y;
 }
+
+- (CGFloat)cornerRadius
+{
+    return self.layer.cornerRadius;
+}
+
+- (CGFloat)borderWidth
+{
+    return self.layer.borderWidth;
+}
+
+- (UIColor *)borderColor
+{
+    return [UIColor colorWithCGColor:self.layer.borderColor];
+}
+
 
 #pragma mark - Setters
 
@@ -159,16 +177,44 @@
     self.frame          = frame;
 }
 
-- (void)setCenterX:(CGFloat)centerX {
+- (void)setCenterX:(CGFloat)centerX 
+{
     self.center = CGPointMake(centerX, self.center.y);
 }
 
-- (void)setCenterY:(CGFloat)centerY {
+- (void)setCenterY:(CGFloat)centerY 
+{
     self.center = CGPointMake(self.center.x, centerY);
 }
 
+- (void)setCornerRadius:(CGFloat)cornerRadius
+{
+    self.layer.cornerRadius = cornerRadius;
+}
+
+- (void)setBorderWidth:(CGFloat)borderWidth
+{
+    self.layer.borderWidth = borderWidth;
+}
+
+- (void)setBorderColor:(UIColor *)borderColor
+{
+    self.layer.borderColor = borderColor.CGColor;
+}
+
+
+- (UIImage *)rasterizedToImage
+{
+    UIGraphicsBeginImageContext(self.size);
+    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *rasterizedView = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return rasterizedView;
+}
+
 #pragma mark - RoundCorners
--(void)setRoundedCorners:(UIViewRoundedCornerMask)corners radius:(CGFloat)radius 
+- (void)setRoundedCorners:(UIViewRoundedCornerMask)corners radius:(CGFloat)radius 
 {
     CGRect rect = self.bounds;
 	
@@ -193,6 +239,21 @@
 	[[self layer] setMask:maskLayer];
 	CFRelease(path);
 }
+
+#pragma mark - Shadows a Drawing
+- (void)addShadowWithColor:(UIColor *)color offset:(CGSize)offset opacity:(CGFloat)opacity andRadius:(CGFloat)radius
+{
+    CGPathRef path = CGPathCreateWithRect(self.bounds, NULL);
+    
+    self.layer.shadowPath       = path;
+    self.layer.shadowColor      = color.CGColor;
+    self.layer.shadowOffset     = offset;
+    self.layer.shadowOpacity    = opacity;
+    self.layer.shadowRadius     = radius;
+    
+    CGPathRelease(path);
+}
+
 
 #pragma mark - Short cut methods
 

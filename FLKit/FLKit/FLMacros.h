@@ -18,11 +18,15 @@
 #define BLACK           [UIColor blackColor]
 #define BLUE            [UIColor blueColor]
 #define GREEN           [UIColor greenColor]
-#define YELLOW          [UIColor yelloFLolor]
+#define YELLOW          [UIColor yellowColor]
+#define MAGENTA         [UIColor magentaColor]
 #define GRAY            [UIColor grayColor]
 #define LIGHTGRAY       [UIColor lightGrayColor]
 #define CLEAR           [UIColor clearColor]
 #define HEX_COLOR(hex)  [UIColor fromHexString:hex]
+
+#define PATH_FOR_RESOURCE(filename, type)   [[NSBundle mainBundle] pathForResource:filename ofType:type]
+#define READ_FILE(filename, type)           [[NSString alloc] initWithContentsOfFile:PATH_FOR_RESOURCE(filename, type) encoding:NSUTF8StringEncoding error:nil]
 
 /* System Shorthand */
 
@@ -36,6 +40,10 @@
 #define DEVICE_ORIENTATION          [[UIDevice currentDevice] orientation]
 #define IS_LANDSCAPE                UIDeviceOrientationIsLandscape(DEVICE_ORIENTATION)
 #define IS_PORTRAIT                 UIDeviceOrientationIsPortrait(DEVICE_ORIENTATION)
+
+#define STATUS_BAR_ORIENTATION      [[UIApplication sharedApplication] statusBarOrientation]
+#define STATUS_BAR_IS_LANDSCAPE     UIDeviceOrientationIsLandscape(STATUS_BAR_ORIENTATION)
+#define STATUS_BAR_IS_PORTRAIT      UIDeviceOrientationIsPortrait(STATUS_BAR_ORIENTATION)
 
 #define ORIENTATION_BOUNDS  \
 CGRectMake((IS_LANDSCAPE)? SCREEN_BOUNDS.origin.y : SCREEN_BOUNDS.origin.x, \
@@ -118,6 +126,8 @@ return shared; \
 // Queues
 #define GLOBAL_QUEUE            dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define MAIN_QUEUE              dispatch_get_main_queue()
+#define SYNCHRONIZE_START(lock) /* NSLog(@"LOCK: FUNC=%s Line=%d", __func__, __LINE__), */dispatch_semaphore_wait(lock, DISPATCH_TIME_FOREVER);
+#define SYNCHRONIZE_END(lock) dispatch_semaphore_signal(lock) /*, NSLog(@"UN-LOCK")*/;
 
 // Threads
 #define isOnMainThread          [[NSThread currentThread] isEqual:[NSThread mainThread]]

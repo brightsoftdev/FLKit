@@ -144,6 +144,8 @@ return shared; \
 #define SET_USER_DEFAULT_OBJECT(key, obj)   [[NSUserDefaults standardUserDefaults] setObject:obj    forKey:key]
 #define SET_USER_DEFAULT_INT(key, intgr)    [[NSUserDefaults standardUserDefaults] setInteger:intgr forKey:key]
 
+#define DELETE_USER_DEFAULT(key)            [[NSUserDefaults standardUserDefaults] removeObjectForKey:key]
+
 #define SYNC_USER_DEFAULTS                  [[NSUserDefaults standardUserDefaults] synchronize]
 
 #ifndef DEGREES_TO_RADIANS

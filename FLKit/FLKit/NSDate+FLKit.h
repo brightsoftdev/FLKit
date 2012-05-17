@@ -101,6 +101,8 @@ typedef enum {
 @property (readonly) NSInteger year;
 
 // Additions Made By Wess
+@property (readonly) NSString *monthStringAbbreviated;
+
 + (int)unixTimestampFromDate:(NSDate *)aDate;
 + (int)unixTimestampNow;
 + (NSDate *)date:(NSDate *)aDate add:(NSUInteger)increment of:(NSDateTimeType)type;

@@ -5,6 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
+NSString *LocStr(NSString *const key);
 
 typedef enum IntervalFormatterStyle {
     kIntervalFormatterDecimalStyle,

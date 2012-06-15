@@ -36,7 +36,14 @@
 - (void)sizeToFitFixedWidth:(NSInteger)fixedWidth
 {
     self.frame          = CGRectMake(self.frame.origin.x, self.frame.origin.y, fixedWidth, 0);
-    self.lineBreakMode  = UILineBreakModeWordWrap;
+
+#ifdef __IPHONE_6_0
+	self.lineBreakMode  = NSLineBreakByWordWrapping;
+#else
+    self.lineBreakMode  = UILineBreakModeWordWrap; //NSLineBreakByWordWrapping
+#endif
+
+    self.lineBreakMode  = UILineBreakModeWordWrap; //NSLineBreakByWordWrapping
     self.numberOfLines  = 0;
     
     [self sizeToFit];

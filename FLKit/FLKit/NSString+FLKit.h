@@ -22,8 +22,9 @@
 - (NSString *)unescapeHTML;
 - (NSString *)stringByRemovingHTML;
 - (NSString *)capitalizeFirstLetter;
-- (NSString *) md5;
-+ (NSString *) uuid;
+- (NSString *)md5;
+- (NSString *)sha1;
++ (NSString *)uuid;
 
 // For phone numbers:
 + (NSDictionary *) sharedPhoneFormats;

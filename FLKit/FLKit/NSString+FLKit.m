@@ -289,7 +289,7 @@
 
 -(NSString *)md5
 {
-	const char *cStr = [input UTF8String];
+	const char *cStr = [self UTF8String];
 	unsigned char digest[16];
 	CC_MD5( cStr, strlen(cStr), digest ); // This is the md5 call
 
@@ -337,7 +337,7 @@
 
 - (NSString *)summarizeString:(NSInteger)length
 {
-    NSMutableArray *result = NEW_MUTABLE_ARRAY;
+    NSMutableArray *result = [NSMutableArray new];
     NSArray *words = [self componentsSeparatedByString:@" "];
     
     for(int i = 0; i < (length - 1); i++)
